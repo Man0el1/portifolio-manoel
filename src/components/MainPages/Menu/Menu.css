@@ -1,0 +1,47 @@
+.menu {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nome {
+  color: purple;
+}
+.main-icons {
+  display: flex;
+  gap: 10vw;
+}
+
+.generic-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-icon {
+  font-size: 60px;
+}
+
+.button-icon {
+  margin-bottom: 10px;
+}
+
+.status{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 4vw 1vw 4vw;
+  text-align: center;
+  justify-content: center;
+}

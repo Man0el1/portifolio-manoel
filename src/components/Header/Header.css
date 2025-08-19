@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.header-button {
+  background: var(--main-background);
+  padding: 7px 5px 0px 5px;
+  margin-bottom: 5px;
+  border: 3px solid var(--main-div-border);
+  border-radius: 10px;
+  cursor: auto;
+}

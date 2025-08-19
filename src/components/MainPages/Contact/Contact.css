@@ -1,0 +1,62 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.form-email {
+  display: flex;
+  flex-direction: column;
+  width: 46vw;
+  min-width: 310px;
+  gap: 3px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input {
+  background-color: var(--input-background);
+  color: #171717;
+  font-family: 'Roboto', sans-serif;
+}
+
+.small-input {
+  height: 20px;
+  width: 100%;
+}
+
+.big-input {
+  width: 46vw;
+  min-width: 310px;
+  height: 125px;
+  resize: vertical;
+}
+
+.alert-message {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.submit {
+  height: 50px;
+  width: 40vw;
+  max-width: 300px;
+  display: block;
+  margin: 20px auto 0 auto;
+  cursor: pointer;
+}
+
+.hrefmail {
+  display: flex;
+  height: 50px;
+  width: 60vw;
+  max-width: 350px;
+  margin: 20px auto 0 auto;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border: 2px solid #6e6e6e;
+}

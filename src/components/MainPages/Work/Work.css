@@ -1,0 +1,26 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-title {
+  margin: 22px 0 2px 0;
+}
+
+.project-explanation {
+  margin: 12px;
+}
+
+.project-photo {
+  width: 600px;
+  border-radius: 2%;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 700px) {
+  .project-photo {
+    width: 80vw;
+  }
+}

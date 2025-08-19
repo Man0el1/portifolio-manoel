@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+button:active {
+  transform: scale(0.8);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dddddd;
+  border-radius: 0px 5px 5px 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+  border-radius: 0px 5px 5px 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-thumb-hover);
+}
+
+.light-theme {
+  --background: linear-gradient(to bottom, #ddfaf8, #cadaf0 80%, #a9b6e7);
+  --scroll-thumb: #b5b5b5;
+  --scroll-thumb-hover: #8a8a8a;
+  --normal-text: #171717;
+  --main-background: #ffffff;
+  --main-div-border: #171717;
+  --main-div-header: #171717;
+  --main-div-header-text: #ffffff;
+  --stars: #96bbbd;
+  --stars-width: 35vw;
+  --stars-height: 25px;
+  --stars-blur: 20px;
+  --input-background: #d4e3e4;
+  --mouse-mov: #616161;
+}
+
+.dark-theme {
+  --background: linear-gradient(to bottom, #09092c, #1b2735 80%, #101011);
+  --scroll-thumb: #555555;
+  --scroll-thumb-hover: #777777;
+  --normal-text: #ffffff;
+  --main-background: #171717;
+  --main-div-border: #ffffff;
+  --main-div-header: #ffffff;
+  --main-div-header-text: #171717;
+  --stars: #ffffff;
+  --stars-width: 3px;
+  --stars-height: 3px;
+  --stars-blur: 0px;
+  --input-background: #ffffff;
+  --mouse-mov: #ffffff;
+}
+
+.big-text {
+  font-size: 50px;
+}
+
+@media (max-width: 500px) {
+  .big-text {
+    font-size: 30px;
+  }
+}
+
+.text {
+  color: var(--normal-text);
+  transition: color 0.2s ease;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--background);
+  cursor: none;
+}
+
+.stars {
+  background-color: var(--stars);
+  filter: blur(var(--stars-blur));
+  width: var(--stars-width);
+  height: var(--stars-height);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  box-shadow:
+    2vw 5vh var(--stars), 10vw 8vh var(--stars), 15vw 15vh var(--stars),
+    22vw 22vh var(--stars), 28vw 12vh var(--stars), 32vw 32vh var(--stars),
+    38vw 18vh var(--stars), 42vw 35vh var(--stars), 48vw 25vh var(--stars),
+    53vw 42vh var(--stars), 58vw 15vh var(--stars), 63vw 38vh var(--stars),
+    68vw 28vh var(--stars), 73vw 45vh var(--stars), 78vw 32vh var(--stars),
+    83vw 48vh var(--stars), 88vw 20vh var(--stars), 93vw 52vh var(--stars),
+    5vw 38vh var(--stars), 5vw 60vh var(--stars), 12vw 65vh var(--stars),
+    18vw 72vh var(--stars), 25vw 78vh var(--stars), 30vw 85vh var(--stars),
+    35vw 68vh var(--stars), 40vw 82vh var(--stars), 45vw 92vh var(--stars),
+    50vw 75vh var(--stars), 55vw 88vh var(--stars), 60vw 95vh var(--stars),
+    65vw 72vh var(--stars), 70vw 85vh var(--stars), 75vw 78vh var(--stars),
+    80vw 92vh var(--stars), 21vw 45vh var(--stars), 90vw 88vh var(--stars),
+    95vw 75vh var(--stars), 8vw 12vh var(--stars), 16vw 18vh var(--stars),
+    24vw 25vh var(--stars), 33vw 15vh var(--stars), 41vw 28vh var(--stars),
+    57vw 22vh var(--stars), 65vw 42vh var(--stars), 73vw 28vh var(--stars),
+    81vw 48vh var(--stars), 89vw 32vh var(--stars), 97vw 45vh var(--stars),
+    3vw 68vh var(--stars), 11vw 75vh var(--stars), 19vw 82vh var(--stars),
+    27vw 88vh var(--stars), 35vw 72vh var(--stars), 43vw 85vh var(--stars),
+    51vw 92vh var(--stars), 59vw 78vh var(--stars), 49vw 35vh var(--stars);
+}
+
+.spotlight::before {
+  content: "";
+  position: absolute;
+  inset: 0%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s ease;
+  z-index: 1;
+
+  background: radial-gradient(
+    20px circle at var(--x, -999px) var(--y, -999px),
+    var(--mouse-mov),
+    #00000000 60%
+  );
+
+  will-change: background-position, opacity;
+}
+
+.spotlight:hover::before {
+  opacity: 1;
+}
+
+.main {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  cursor: auto;
+  z-index: 1;
+  border: 5px solid var(--main-div-border);
+  margin: auto;
+  border-radius: 10px;
+  background-color: var(--main-background);
+  transition: border 0.2s ease, width 0.2s ease, max-width 0.2s ease, height 0.2s ease, background-color 0.2s;
+}
+
+.small-main {
+  width: 80vw;
+  max-width: 670px;
+  height: 323px;
+}
+
+@media (max-width: 500px) {
+  .small-main {
+    height: 323px;
+  }
+}
+
+.big-main {
+  width: 90vw;
+  max-width: 800px;
+  height: 75vh;
+  max-height: 700px;
+  overflow-y: overlay;
+}

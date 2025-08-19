@@ -1,0 +1,25 @@
+.main-div-header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-div-header);
+  color: var(--main-div-header-text);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.page-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.back-button {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,72 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.avatar {
+  width: 150px;
+  margin: 10px;
+  border-radius: 45%;
+  border: 4px solid var(--main-div-border);
+}
+
+hr {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.about-sub {
+  width: 80%;
+}
+
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.section-proficiencies {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.proficiency {
+  font-size: 21px;
+  padding: 5px;
+  border: 2px solid var(--main-div-border);
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px grey;
+  background: var(--background);
+  cursor: default;
+  z-index: 0;
+  transform: translate(0, 0);
+}
+
+.proficiency:hover {
+  transform: translate(0px, -2px);
+  transition: transform 0.2s ease;
+}
+
+.section-education {
+  font-size: 17px;
+  padding-left: 1vw;
+  border-left: 10px solid var(--normal-text);
+  margin-bottom: 10px;
+}
+
+.education-subtitle {
+  color: grey;
+}
