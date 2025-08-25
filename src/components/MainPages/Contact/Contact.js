@@ -55,11 +55,6 @@ export default function Contact({ handleBackButton }) {
     setAlertMessage('');
     setIsSending(true);
 
-    console.log("Service:", process.env.REACT_APP_SERVICEID);
-    console.log("Template:", process.env.REACT_APP_TEMPLATEID);
-    console.log("Public Key:", process.env.REACT_APP_PUBLICKEY);
-
-
     emailjs.send(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_TEMPLATEID, {
       name: name,
       email: email,
