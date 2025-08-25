@@ -23,6 +23,7 @@
 
 .tooltip .tooltiptext {
   visibility: hidden;
+  opacity: 0;
   font-family: 'Roboto', sans-serif;
   width: 60px;
   height: 17px;
@@ -35,8 +36,10 @@
   bottom: -58%;
   left: -15%;
   font-size: 15px;
+  transition: opacity 0.4s ease;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  opacity: 1;
 }
