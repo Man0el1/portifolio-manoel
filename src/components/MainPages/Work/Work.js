@@ -13,11 +13,6 @@ export default function Menu({ handleBackButton }) {
       title: 'VetSchedule',
       description: '• Um sistema de agendamento de consultas para atendimento médico',
       img: '/images/VetSchedule.webp'
-    },
-    {
-      title: 'Outro Projeto',
-      description: '• Mais um teste legal para nos testarmos',
-      img: '/images/VetSchedule.webp'
     }
   ];
 
