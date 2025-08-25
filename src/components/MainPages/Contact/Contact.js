@@ -75,6 +75,7 @@ export default function Contact({ handleBackButton }) {
       },
       (error) => {
         setIsSending(false);
+        console.log(error)
 
         setAlertMessage('Erro ao enviar o email. Por favor, tente novamente ou utilize a proxima opção.');
         colorAlertMessage('error');
