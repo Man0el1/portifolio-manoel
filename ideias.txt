@@ -4,6 +4,3 @@ botao dado css aleatorio
 --- About ---
 modelos como scrum
 --- todo ---
-preciso mudar os botoes para caberem e serem responsivos
-talvez uma animação de estrela pulsando? o do mouse digo
-postar no github, separado ou junto do codigoestudos..

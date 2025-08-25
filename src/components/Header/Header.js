@@ -19,8 +19,15 @@ export default function Header() {
 
   return(
     <header className="header text">
-      <button className='header-button' title='Tema' onClick={changeTheme}> {localTheme === 'light-theme' ? <FaMoon /> : <IoIosSunny />} </button>
-      <button className='header-button' title='???'><FaQuestion /></button>
+      <div className="tooltip">
+        <button className='header-button' onClick={changeTheme}> {localTheme === 'light-theme' ? <FaMoon /> : <IoIosSunny />} </button>
+        <span className="tooltiptext text">Tema</span>
+      </div>
+      <div className="tooltip">
+        <button className='header-button'><FaQuestion /></button>
+        <span className="tooltiptext text">???</span>
+      </div>
+
     </header>
   )
 }

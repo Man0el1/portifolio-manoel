@@ -4,7 +4,7 @@
   justify-content: space-between;
   z-index: 1;
   font-size: 30px;
-  margin: 20px;
+  margin: 20px 20px 0 20px;
 }
 
 .header-button {
@@ -14,4 +14,29 @@
   border: 3px solid var(--main-div-border);
   border-radius: 10px;
   cursor: auto;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-family: 'Roboto', sans-serif;
+  width: 60px;
+  height: 17px;
+  background-color: var(--tooltip-background);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -58%;
+  left: -15%;
+  font-size: 15px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

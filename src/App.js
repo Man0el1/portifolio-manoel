@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import Header from './components/Header/Header'
 import Menu from './components/MainPages/Menu/Menu'
@@ -16,6 +16,12 @@ export default function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [activePage, setActivePage] = useState("menu");
   const mainRef = useRef(null);
+
+  useEffect(() => {
+    if (mainRef.current) {
+      mainRef.current.scrollTo(0, 0);
+    }
+  }, [activePage])
 
   function handleMenuClick(page){
     setActivePage(page);

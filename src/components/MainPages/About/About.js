@@ -33,7 +33,7 @@ export default function About({ handleBackButton }) {
 
         <div className='about-sub about-intro'>
           <div style={{ width: '170px',  height: '170px'}}>
-            <img className='avatar' src='/images/avatar.jpg' loading="lazy" alt='avatar' />
+            <img className='avatar' src='/images/avatar.webp' loading="lazy" alt='avatar' />
           </div>
           <h2 className='text'>Manoel Geremias</h2>
           <h5 className='text'>Web Developer e estudante</h5>
@@ -56,7 +56,7 @@ export default function About({ handleBackButton }) {
             <p className='education-subtitle'>Cambridge</p>
           </div>
           <div className='section-education'>
-            <p className='education text'>?? Horas de certificação</p>
+            <p className='education text'>Multiplos certificados de cursos on-line</p>
           </div>
         </div>
 

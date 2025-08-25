@@ -19,8 +19,16 @@
   margin-bottom: 5px;
 }
 
+.photo-container {
+  height: 300px;
+}
+
+
 @media (max-width: 700px) {
   .project-photo {
     width: 80vw;
   }
+  .photo-container {
+    height: 40vw;
+}
 }
