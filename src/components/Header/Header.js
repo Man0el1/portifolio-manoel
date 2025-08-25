@@ -20,11 +20,11 @@ export default function Header() {
   return(
     <header className="header text">
       <div className="tooltip">
-        <button className='header-button' onClick={changeTheme}> {localTheme === 'light-theme' ? <FaMoon /> : <IoIosSunny />} </button>
+        <button title="Tema" className='header-button' onClick={changeTheme}> {localTheme === 'light-theme' ? <FaMoon /> : <IoIosSunny />} </button>
         <span className="tooltiptext text">Tema</span>
       </div>
       <div className="tooltip">
-        <button className='header-button'><FaQuestion /></button>
+        <button title="???" className='header-button'><FaQuestion /></button>
         <span className="tooltiptext text">???</span>
       </div>
 

@@ -27,13 +27,19 @@ export default function Menu({ handleBackButton }) {
 
           <Zoom zoomMargin={5}>
             <div className="photo-container">
-              <img className="project-photo" src={project.img} loading="lazy" alt={project.title} />
+              <img className="project-photo" src={project.img} alt={project.title} />
             </div>
           </Zoom>
           <hr/>
 
         </div>
       ))}
+
+      <div className='end-project'>
+        <h2 className='text'>Veja mais no meu
+          <a className="github-link" href="https://github.com/Man0el1" target="_blank" rel="noopener noreferrer"> GitHub</a>
+        !</h2>
+      </div>
     </div>
   );
 }

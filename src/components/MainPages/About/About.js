@@ -33,7 +33,7 @@ export default function About({ handleBackButton }) {
 
         <div className='about-sub about-intro'>
           <div style={{ width: '170px',  height: '170px'}}>
-            <img className='avatar' src='/images/avatar.webp' loading="lazy" alt='avatar' />
+            <img className='avatar' src='/images/avatar.webp' alt='avatar' />
           </div>
           <h2 className='text'>Manoel Geremias</h2>
           <h5 className='text'>Web Developer e estudante</h5>

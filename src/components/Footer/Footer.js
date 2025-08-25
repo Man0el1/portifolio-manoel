@@ -7,9 +7,9 @@ export default function Footer() {
   return(
     <footer className="footer">
       <div className="social-icons text">
-        <a href="https://www.instagram.com/man0el26" target="_blank" rel="noopener noreferrer"><FaInstagramSquare /></a>
-        <a href="https://github.com/Man0el1" target="_blank" rel="noopener noreferrer"><FaGithubSquare /></a>
-        <a href="https://www.linkedin.com/in/manoel-geremias-725397268/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+        <a title="Instagram" href="https://www.instagram.com/man0el26" target="_blank" rel="noopener noreferrer"><FaInstagramSquare /></a>
+        <a title="GitHub" href="https://github.com/Man0el1" target="_blank" rel="noopener noreferrer"><FaGithubSquare /></a>
+        <a title="Linkedin" href="https://www.linkedin.com/in/manoel-geremias-725397268/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
       </div>
     </footer>
   )
