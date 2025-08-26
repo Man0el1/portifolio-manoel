@@ -4,7 +4,7 @@
   justify-content: space-between;
   z-index: 1;
   font-size: 30px;
-  margin: 20px 20px 0 20px;
+  margin: 20px 10px 0 10px;
 }
 
 .header-button {
@@ -17,25 +17,23 @@
 }
 
 .tooltip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  display: inline-block;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
   opacity: 0;
   font-family: 'Roboto', sans-serif;
-  width: 60px;
-  height: 17px;
+  min-width: 60px;
   background-color: var(--tooltip-background);
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: -58%;
-  left: -15%;
+  padding: 5px 8px;
   font-size: 15px;
+  margin-top: 8px;
   transition: opacity 0.4s ease;
 }
 

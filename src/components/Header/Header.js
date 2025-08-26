@@ -25,7 +25,7 @@ export default function Header() {
       </div>
       <div className="tooltip">
         <button title="???" className='header-button'><FaQuestion /></button>
-        <span className="tooltiptext text">???</span>
+        <span className="tooltiptext text">Em breve..</span>
       </div>
 
     </header>

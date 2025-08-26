@@ -55,9 +55,6 @@ export default function About({ handleBackButton }) {
             <p className='education text'>Certificado em Inglês Avançado (C1)</p>
             <p className='education-subtitle'>Cambridge</p>
           </div>
-          <div className='section-education'>
-            <p className='education text'>Multiplos certificados de cursos on-line</p>
-          </div>
         </div>
 
       </div>
