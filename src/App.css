@@ -186,13 +186,14 @@ button:active {
   display: flex;
   position: relative;
   flex-direction: column;
+  margin: auto;
   cursor: auto;
   z-index: 1;
   border: 5px solid var(--main-div-border);
-  margin: auto;
   border-radius: 10px;
   background-color: var(--main-background);
   transition: border 0.2s ease, width 0.2s ease, max-width 0.2s ease, height 0.2s ease, background-color 0.2s;
+  max-height: calc(100vh - 120px);
 }
 
 .small-main {
@@ -203,7 +204,7 @@ button:active {
 
 @media (max-width: 520px) {
   .small-main {
-    height: 323px;
+    height: 300px;
   }
 }
 

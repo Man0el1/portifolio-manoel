@@ -1,12 +1,12 @@
 .header {
   display: flex;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   align-items: center;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 2;
   font-size: 30px;
   margin: 10px 4px -20px
 }
