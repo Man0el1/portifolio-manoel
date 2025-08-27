@@ -1,7 +1,12 @@
 .footer {
   display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
 }
 
 .social-icons {

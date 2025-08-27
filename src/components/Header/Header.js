@@ -7,7 +7,7 @@ import './Header.css'
 import {setTheme} from '../../utils/themes'
 
 export default function Header() {
-  const [localTheme, setLocalTheme] = useState(localStorage.getItem('theme') || 'light-theme')
+  const [localTheme, setLocalTheme] = useState(localStorage.getItem('theme') || 'dark-theme')
 
   function changeTheme() {
     setLocalTheme(localTheme === 'light-theme' ? 'dark-theme' : 'light-theme');

@@ -4,3 +4,5 @@ botao dado css aleatorio
 --- About ---
 modelos como scrum
 --- todo ---
+adicionar softskills
+cursos tecnicos
