@@ -97,6 +97,12 @@ button:active {
   }
 }
 
+@media (max-height: 400px) {
+  .big-text {
+    font-size: 30px;
+  }
+}
+
 .text {
   color: var(--normal-text);
   transition: color 0.2s ease;
@@ -105,7 +111,8 @@ button:active {
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  height: 100vh;
+  height: 100svh;
   background: var(--background);
   cursor: none;
 }
@@ -193,7 +200,6 @@ button:active {
   border-radius: 10px;
   background-color: var(--main-background);
   transition: border 0.2s ease, width 0.2s ease, max-width 0.2s ease, height 0.2s ease, background-color 0.2s;
-  max-height: calc(100vh - 155px);
   overflow-y: auto;
 }
 

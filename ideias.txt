@@ -4,6 +4,6 @@ botao dado css aleatorio
 --- About ---
 modelos como scrum
 --- todo ---
-adicionar softskills
-cursos tecnicos
-entender por que o scroll no main ta quebrado
+adicionar softskills e cursos tecnicos
+big main tem que deixar um espaço pro footer quando aumenta no mobile
+concertar header botoes hitbox

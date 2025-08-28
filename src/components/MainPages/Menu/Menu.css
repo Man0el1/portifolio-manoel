@@ -7,6 +7,12 @@
   padding-top: 7vh;
 }
 
+@media (max-height: 500px) {
+  .menu {
+    gap: 3vh
+  }
+}
+
 .introduction {
   display: flex;
   flex-direction: column;
