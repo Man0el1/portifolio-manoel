@@ -1,12 +1,10 @@
 .menu {
   display: flex;
   position: relative;
-  overflow: hidden;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 7vh;
 }
 
 .introduction {

@@ -6,3 +6,4 @@ modelos como scrum
 --- todo ---
 adicionar softskills
 cursos tecnicos
+entender por que o scroll no main ta quebrado
