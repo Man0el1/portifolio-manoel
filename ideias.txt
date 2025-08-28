@@ -5,5 +5,4 @@ botao dado css aleatorio
 modelos como scrum
 --- todo ---
 adicionar softskills e cursos tecnicos
-big main tem que deixar um espaço pro footer quando aumenta no mobile
-concertar header botoes hitbox
+concertar contato

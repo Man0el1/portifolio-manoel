@@ -41,7 +41,7 @@
   transition: opacity 0.4s ease;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip .header-button:hover + .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
