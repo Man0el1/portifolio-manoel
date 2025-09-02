@@ -32,8 +32,8 @@ export default function Menu({ handleMenuClick }) {
       </div>
 
       <div className='status'>
-        <h3 className='text status-date'>Status (25/08):</h3>
-        <p className='text'>Inauguração deste site!🥳</p>
+        <h3 className='text status-date'>Status (02/09):</h3>
+        <p className='text'>Estudando mais React e aprendendo Next.js</p>
       </div>
     </div>
   )

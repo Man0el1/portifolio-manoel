@@ -13,6 +13,11 @@ export default function Menu({ handleBackButton }) {
       title: 'VetSchedule',
       description: '• Um sistema de agendamento de consultas para atendimento médico',
       img: '/images/VetSchedule.webp'
+    },
+    {
+      title: 'Ajuste de Opacidade',
+      description: '• Sistema simples em python para deixar imagens transparentes',
+      img: '/images/transjar.webp'
     }
   ];
 
