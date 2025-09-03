@@ -11,6 +11,10 @@
   margin: 10px 4px -40px
 }
 
+.header-left {
+  display: flex;
+}
+
 .header-button {
   background: var(--main-background);
   padding: 7px 5px 0px 5px;

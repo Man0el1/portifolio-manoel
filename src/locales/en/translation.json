@@ -1,0 +1,50 @@
+{
+  "header": {
+    "theme": "Tema",
+    "language": "Idioma",
+    "garbage": "Em breve.."
+  },
+
+  "menu": {
+    "intro": "Olá! Sou ",
+    "about": "Sobre",
+    "work": "Trabalhos",
+    "contact": "Contato",
+    "status": "Estudando mais React e aprendendo Next.js"
+  },
+
+  "about": {
+    "programming_languages": "Linguagens",
+    "database": "Banco de Dados",
+    "tools": "Ferramentas",
+    "education": "Educação",
+    "cs": "Bacharelado em Ciência da Computação",
+    "english": "Certificado em Inglês Avançado (C1)"
+  },
+
+  "work": {
+    "github": "Veja mais no meu ",
+    "work_1": "VetSchedule",
+    "work_1sub": "Um sistema de agendamento de consultas para atendimento médico",
+    "work_2": "Ajuste de Opacidade",
+    "work_2sub": "Sistema simples em python para deixar imagens transparentes"
+  },
+
+  "contact": {
+    "title": "Interessado em me contatar? Sinta-se livre em utilizar meu e-mail.",
+    "subtitle": "(É até mais capaz de eu olhar sua mensagem assim...)",
+
+    "form": {
+      "sendTo": "Enviar para manoelgtcj@gmail.com",
+      "name": "Nome",
+      "subject": "Título",
+      "message": "Mensagem",
+      "send_button": "Enviar"
+    },
+
+    "alternative": {
+      "text": "Ou se preferir contato usando o seu cliente de e-mail padrão...",
+      "mailto": "Enviar e-mail para manoelgtcj@gmail.com"
+    }
+  }
+}

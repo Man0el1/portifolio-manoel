@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 import Header from './components/Header/Header'
 import Menu from './components/MainPages/Menu/Menu'
@@ -15,13 +16,22 @@ import { handleMouseMove } from "./utils/mouseMov";
 export default function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [activePage, setActivePage] = useState("menu");
+  const [currentLanguage, setCurrentLanguage] = useState("");
   const mainRef = useRef(null);
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const detectedLang = i18n.language || window.localStorage.i18nextLng || "en";
+    setCurrentLanguage(detectedLang);
+  }, []);
 
   useEffect(() => {
     if (mainRef.current) {
       mainRef.current.scrollTo(0, 0);
     }
-  }, [activePage])
+  }, [activePage]);
+
+  const changeLanguage = () => i18n.changeLanguage(currentLanguage === "en" ? "pt" : "en")
 
   function handleMenuClick(page){
     setActivePage(page);

@@ -36,7 +36,7 @@ export default function About({ handleBackButton }) {
             <img className='avatar' src='/images/avatar.webp' alt='avatar' />
           </div>
           <h2 className='text'>Manoel Geremias</h2>
-          <h5 className='text'>Web Developer e estudante</h5>
+          <h5 className='text'>Web Developer</h5>
         </div>
         <hr/>
 
