@@ -6,6 +6,5 @@
         { "key": "Content-Type", "value": "text/html; charset=utf-8" }
       ]
     }
-  ],
-  "buildCommand": "npm install --legacy-peer-deps && npm run build"
+  ]
 }
