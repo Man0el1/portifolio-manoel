@@ -4,14 +4,17 @@ import MainHeader from '../../MainHeader/MainHeader'
 
 import './About.css';
 
+import { useTranslation } from 'react-i18next';
+
 export default function About({ handleBackButton }) {
+  const { t } = useTranslation();
   const languages = ['Javascript','HTML/CSS','Python','Java','C'];
   const frameworks = ['React', 'Express'];
   const bancoDeDados = ['MongoDB', 'PostgreSQL', 'MySQL'];
   const ferramentas = ['Git', 'Github', 'Trello', 'Figma'];
 
   const sections = [languages, frameworks, bancoDeDados, ferramentas];
-  const sectionsStrings = ['Linguagens', 'Frameworks', 'Banco de Dados', 'Ferramentas'];
+  const sectionsStrings = [t("about.programming_languages"), "Frameworks", t("about.database"), t("about.tools")];
 
   function showSections() {
     return sections.map((section, index) => (
@@ -28,7 +31,7 @@ export default function About({ handleBackButton }) {
 
   return(
     <div>
-      <MainHeader handleBackButton={handleBackButton} pageName={'Sobre'} />
+      <MainHeader handleBackButton={handleBackButton} pageName={t("menu.about")} />
       <div className='about'>
 
         <div className='about-sub about-intro'>
@@ -46,13 +49,13 @@ export default function About({ handleBackButton }) {
         <hr/>
 
         <div className='about-sub about-education'>
-          <h2 className='section-title text'>• Educação</h2>
+          <h2 className='section-title text'>• {t("about.education")}</h2>
           <div className='section-education'>
-            <p className='education text'>Bacharelado em Ciencias da Computação </p>
+            <p className='education text'>{t("about.cs")}</p>
             <p className='education-subtitle'>Universidade Jorge Amado 2023-2026</p>
           </div>
           <div className='section-education'>
-            <p className='education text'>Certificado em Inglês Avançado (C1)</p>
+            <p className='education text'>{t("about.english")}</p>
             <p className='education-subtitle'>Cambridge</p>
           </div>
         </div>

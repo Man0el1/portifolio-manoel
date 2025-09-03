@@ -6,29 +6,32 @@ import MainHeader from '../../MainHeader/MainHeader'
 
 import './Work.css'
 
+import { useTranslation } from 'react-i18next';
+
 export default function Menu({ handleBackButton }) {
+  const { t } = useTranslation();
 
   const projects = [
     {
-      title: 'VetSchedule',
-      description: '• Um sistema de agendamento de consultas para atendimento médico',
+      title: t('work.work_1'),
+      description: t('work.work_1sub'),
       img: '/images/VetSchedule.webp'
     },
     {
-      title: 'Ajuste de Opacidade',
-      description: '• Sistema simples em python para deixar imagens transparentes',
+      title: t('work.work_2'),
+      description: t('work.work_2sub'),
       img: '/images/transjar.webp'
     }
   ];
 
   return (
     <div className="work">
-      <MainHeader handleBackButton={handleBackButton} pageName={'Trabalhos'} />
+      <MainHeader handleBackButton={handleBackButton} pageName={t("menu.work")} />
 
       {projects.map((project, index) => (
         <div key={index} className="project">
           <h2 className="text project-title">{project.title}</h2>
-          <p className="text project-explanation">{project.description}</p>
+          <p className="text project-explanation">{'• ' + project.description}</p>
 
           <Zoom zoomMargin={5}>
             <div className="photo-container">
@@ -41,7 +44,7 @@ export default function Menu({ handleBackButton }) {
       ))}
 
       <div className='end-project'>
-        <h2 className='text'>Veja mais no meu
+        <h2 className='text'>{t('work.github')}
           <a className="github-link" href="https://github.com/Man0el1" target="_blank" rel="noopener noreferrer"> GitHub</a>
         !</h2>
       </div>

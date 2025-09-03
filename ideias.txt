@@ -4,4 +4,7 @@ botao dado css aleatorio
 --- About ---
 modelos como scrum
 --- todo ---
-adicionar softskills e cursos tecnicos
+adicionar cursos tecnicos
+adicionar tradução pra envio de mensagem
+header nao mudar texto tamanho
+tooltip z-index: 3;

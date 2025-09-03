@@ -4,8 +4,11 @@ import emailjs from '@emailjs/browser';
 import MainHeader from '../../MainHeader/MainHeader'
 import './Contact.css'
 import isEmail from 'validator/lib/isEmail';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact({ handleBackButton }) {
+  const { t } = useTranslation();
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [title, setTitle] = useState('');
@@ -85,31 +88,31 @@ export default function Contact({ handleBackButton }) {
 
   return(
     <div>
-      <MainHeader handleBackButton={handleBackButton} pageName={'Contato'} />
+      <MainHeader handleBackButton={handleBackButton} pageName={t("menu.contact")} />
 
       <div className='contact'>
         <div className='contact-intro'>
-          <h2 className='text'>Interessado em me contatar? Sinta-se livre em utilizar meu e-mail.</h2>
-          <h6 className='text'>(É até mais capaz de eu olhar sua mensagem assim...)</h6>
+          <h2 className='text'>{t('contact.title')}</h2>
+          <h6 className='text'>{t('contact.subtitle')}</h6>
         </div>
 
-        <h3 className='text'>Enviar para manoelgtcj@gmail.com</h3>
+        <h3 className='text'>{t('contact.form.sendTo')}</h3>
         <form className='form-email text' onSubmit={sendEmail}>
-          <label htmlFor="name">Nome</label>
+          <label htmlFor="name">{t('contact.form.name')}</label>
             <input onChange={(e) => setName(e.target.value)} ref={nameRef} maxLength='61' id='name' name='name' autoComplete="on" className='input small-input' type='text' />
           <label htmlFor="email">Email</label>
             <input onChange={(e) => setEmail(e.target.value)} ref={emailRef} maxLength='61' id='email' name='email' autoComplete="on" className='input small-input' type='email' />
-          <label htmlFor="title">Título</label>
+          <label htmlFor="title">{t('contact.form.subject')}</label>
             <input onChange={(e) => setTitle(e.target.value)} ref={titleRef} maxLength='61' id='title' name='title' className='input small-input' type='text' />
-          <label htmlFor="message">Mensagem</label>
+          <label htmlFor="message">{t('contact.form.message')}</label>
             <textarea onChange={(e) => setMessage(e.target.value)} ref={messageRef} id='message' name='message' className='input big-input' type='text' />
           <p className='alert-message' ref={alertRef}>{alertMessage}</p>
           <input className='submit' type='submit' value={isSending ? 'Enviando' : 'Enviar'} />
         </form>
 
-        <h4 className='text'>Ou se preferir contato usando o seu cliente de e-mail padrão...</h4>
+        <h4 className='text'>{t('contact.alternative.text')}</h4>
 
-        <a className='hrefmail' href="mailto:manoelgtcj@gmail.com">Enviar e-mail para manoelgtcj@gmail.com</a>
+        <a className='hrefmail' href="mailto:manoelgtcj@gmail.com">{t('contact.alternative.mailto')}</a>
       </div>
     </div>
   )

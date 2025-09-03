@@ -10,8 +10,8 @@ export default i18n
   .use(initReactI18next)
   .init({
     resources: {
-      en: {enTranslation},
-      pt: {ptTranslation}
+      en: {translation: enTranslation},
+      pt: {translation: ptTranslation}
     },
-    fallback: "pt"
+    fallbackLng: "pt"
   })
