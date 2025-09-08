@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   width: 46vw;
+  max-width: 680px;
   min-width: 250px;
   gap: 3px;
   text-align: left;
@@ -30,6 +31,7 @@
 
 .big-input {
   width: 46vw;
+  max-width: 680px;
   min-width: 250px;
   height: 125px;
   resize: vertical;
