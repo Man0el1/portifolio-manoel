@@ -39,7 +39,10 @@
       "name": "Nome",
       "subject": "Título",
       "message": "Mensagem",
-      "send_button": "Enviar"
+      "submit": "Enviar",
+      "submiting": "Enviando...",
+      "success": "E-mail enviado! :D",
+      "error": "Erro ao enviar o email. Por favor, tente novamente ou utilize a proxima opção."
     },
 
     "alternative": {

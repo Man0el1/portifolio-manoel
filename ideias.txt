@@ -1,10 +1,5 @@
 --- RoAG ---
 1/600 de erro
 botao dado css aleatorio
---- About ---
-modelos como scrum
 --- todo ---
 adicionar cursos tecnicos
-adicionar tradução pra envio de mensagem
-header nao mudar texto tamanho
-tooltip z-index: 3;

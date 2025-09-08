@@ -8,7 +8,7 @@
   "menu": {
     "intro": "Hi! I'm ",
     "about": "About",
-    "work": "Work",
+    "work": "Projects",
     "contact": "Contact",
     "status": "Currently studying React & Next.js"
   },
@@ -27,11 +27,11 @@
     "work_1": "VetSchedule",
     "work_1sub": "An appointment scheduling system for medical care",
     "work_2": "Opacity Adjustment",
-    "work_2sub": "Simple Python system to make images transparent"
+    "work_2sub": "A simple Python project to make images transparent"
   },
 
   "contact": {
-    "title": "Interested in contacting me? Feel free to use my email.",
+    "title": "Interested in contacting me? Feel free to use my e-mail.",
     "subtitle": "(More likely I'll see your message this way...)",
 
     "form": {
@@ -39,7 +39,10 @@
       "name": "Name",
       "subject": "Subject",
       "message": "Message",
-      "send_button": "Send"
+      "submit": "Send",
+      "submiting": "Sending...",
+      "success": "Email sent! :D",
+      "error": "Error sending the email. Please try again or use the next option."
     },
 
     "alternative": {

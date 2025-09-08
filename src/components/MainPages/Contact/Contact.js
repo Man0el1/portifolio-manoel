@@ -46,7 +46,7 @@ export default function Contact({ handleBackButton }) {
     if (status === 'error') {
       alertRef.current.style.color = "red"
     } else {
-      alertRef.current.style.color = "white";
+      alertRef.current.style.color = "";
     }
   }
 
@@ -73,14 +73,14 @@ export default function Contact({ handleBackButton }) {
         setTitle('');
         setMessage('');
         setIsSending(false);
-        setAlertMessage('E-mail enviado! :D');
+        setAlertMessage(t('contact.form.success'));
         colorAlertMessage('success');
       },
       (error) => {
         setIsSending(false);
         console.log(error)
 
-        setAlertMessage('Erro ao enviar o email. Por favor, tente novamente ou utilize a proxima opção.');
+        setAlertMessage(t('contact.form.error'));
         colorAlertMessage('error');
       }
     );
@@ -106,8 +106,8 @@ export default function Contact({ handleBackButton }) {
             <input onChange={(e) => setTitle(e.target.value)} ref={titleRef} maxLength='61' id='title' name='title' className='input small-input' type='text' />
           <label htmlFor="message">{t('contact.form.message')}</label>
             <textarea onChange={(e) => setMessage(e.target.value)} ref={messageRef} id='message' name='message' className='input big-input' type='text' />
-          <p className='alert-message' ref={alertRef}>{alertMessage}</p>
-          <input className='submit' type='submit' value={isSending ? 'Enviando' : 'Enviar'} />
+          <p className='text alert-message' ref={alertRef}>{alertMessage}</p>
+          <input className='submit' type='submit' value={isSending ? t('contact.form.submiting') : t('contact.form.submit')} />
         </form>
 
         <h4 className='text'>{t('contact.alternative.text')}</h4>
