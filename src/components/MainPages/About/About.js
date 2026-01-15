@@ -58,6 +58,14 @@ export default function About({ handleBackButton }) {
             <p className='education text'>{t("about.english")}</p>
             <p className='education-subtitle'>Cambridge</p>
           </div>
+          <div className='section-education'>
+            <p className='education text'>{t("about.alura")}</p>
+            <p className='education-subtitle'>{t("about.alura-sub")}</p>
+          </div>
+          <div className='section-education'>
+            <p className='education text'>{t("about.udemy")}</p>
+            <p className='education-subtitle'>{t("about.udemy-sub")}</p>
+          </div>
         </div>
 
       </div>

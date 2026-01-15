@@ -10,7 +10,7 @@
     "about": "About",
     "work": "Projects",
     "contact": "Contact",
-    "status": "Starting a new API focused project"
+    "status": "New courses have been completed!"
   },
 
   "about": {
@@ -19,7 +19,11 @@
     "tools": "Tools",
     "education": "Education",
     "cs": "Bachelor's Degree in Computer Science",
-    "english": "Advanced English Certificate (C1)"
+    "english": "Advanced English Certificate (C1)",
+    "alura": "General software development courses",
+    "alura-sub": "Alura | 2024 | 74hrs",
+    "udemy": "JavaScript from basic to advanced JS/TS course",
+    "udemy-sub": "Udemy | 2025-2026 (Ongoing)"
   },
 
   "work": {

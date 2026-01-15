@@ -10,7 +10,7 @@
     "about": "Sobre",
     "work": "Trabalhos",
     "contact": "Contato",
-    "status": "Começando um novo projeto focado em API"
+    "status": "Novos cursos foram concluidos!"
   },
 
   "about": {
@@ -19,7 +19,11 @@
     "tools": "Ferramentas",
     "education": "Educação",
     "cs": "Bacharelado em Ciência da Computação",
-    "english": "Certificado em Inglês Avançado (C1)"
+    "english": "Certificado em Inglês Avançado (C1)",
+    "alura": "Cursos gerais de desenvolvimento de software",
+    "alura-sub": "Alura | 2024 | 74hrs",
+    "udemy": "Curso de JavaScript do básico ao avançado JS/TS",
+    "udemy-sub": "Udemy | 2025-2026 (Em andamento)"
   },
 
   "work": {
