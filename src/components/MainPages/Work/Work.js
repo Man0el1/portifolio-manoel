@@ -20,6 +20,11 @@ export default function Menu({ handleBackButton }) {
     {
       title: t('work.work_2'),
       description: t('work.work_2sub'),
+      img: '/images/hotelapi.webp'
+    },
+    {
+      title: t('work.work_3'),
+      description: t('work.work_3sub'),
       img: '/images/transjar.webp'
     }
   ];

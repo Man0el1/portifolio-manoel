@@ -13,7 +13,7 @@ export default function Header() {
   const [localTheme, setLocalTheme] = useState(localStorage.getItem('theme') || 'dark-theme');
 
   function changeTheme() {
-    setLocalTheme(localTheme === 'light-theme' ? 'dark-theme' : 'light-theme');
+    setLocalTheme(localTheme === 'dark-theme' ? 'light-theme' : 'dark-theme');
   }
   const changeCurrentLanguage = () => {
     const newLang = i18n.language === "en" ? "pt" : "en";

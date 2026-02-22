@@ -30,8 +30,10 @@
     "github": "Veja mais no meu ",
     "work_1": "VetSchedule",
     "work_1sub": "Um sistema de agendamento de consultas para atendimento médico",
-    "work_2": "Ajuste de Opacidade",
-    "work_2sub": "Sistema simples em python para deixar imagens transparentes"
+    "work_2": "Hotel Aurora Atlântica (Em progresso)",
+    "work_2sub": "Site de booking para um hotel simulado (Atualmente focado em backend)",
+    "work_3": "Ajuste de Opacidade",
+    "work_3sub": "Sistema simples em python para deixar imagens transparentes"
   },
 
   "contact": {
