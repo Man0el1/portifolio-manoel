@@ -2,8 +2,9 @@
   margin: 0;
 }
 
-body {
+html, body {
   overscroll-behavior: none;
+  background-color: #121212;
 }
 
 a {
@@ -71,12 +72,12 @@ button:active {
   --main-div-border: #ffffff;
   --main-div-header: #ffffff;
   --main-div-header-text: #171717;
-  --stars: #ffffff;
+  --stars: #ffffff9f;
   --stars-width: 3px;
   --stars-height: 3px;
   --stars-blur: 0px;
   --input-background: #e1ebee;
-  --mouse-mov: #ffffff;
+  --mouse-mov: #ffffffbd;
   --tooltip-background: #ffffff52;
 }
 
@@ -128,19 +129,9 @@ button:active {
   box-shadow:
     2vw 5vh var(--stars), 10vw 8vh var(--stars), 15vw 15vh var(--stars),
     22vw 22vh var(--stars), 28vw 12vh var(--stars), 32vw 32vh var(--stars),
-    38vw 18vh var(--stars), 42vw 35vh var(--stars), 48vw 25vh var(--stars),
-    53vw 42vh var(--stars), 58vw 15vh var(--stars), 63vw 38vh var(--stars),
     68vw 28vh var(--stars), 73vw 45vh var(--stars), 78vw 32vh var(--stars),
     83vw 48vh var(--stars), 88vw 20vh var(--stars), 93vw 52vh var(--stars),
-    5vw 38vh var(--stars), 5vw 60vh var(--stars), 12vw 65vh var(--stars),
-    18vw 72vh var(--stars), 25vw 78vh var(--stars), 30vw 85vh var(--stars),
-    35vw 68vh var(--stars), 40vw 82vh var(--stars), 45vw 92vh var(--stars),
-    50vw 75vh var(--stars), 55vw 88vh var(--stars), 60vw 95vh var(--stars),
-    65vw 72vh var(--stars), 70vw 85vh var(--stars), 75vw 78vh var(--stars),
-    80vw 92vh var(--stars), 21vw 45vh var(--stars), 90vw 88vh var(--stars),
     95vw 75vh var(--stars), 8vw 12vh var(--stars), 16vw 18vh var(--stars),
-    24vw 25vh var(--stars), 33vw 15vh var(--stars), 41vw 28vh var(--stars),
-    57vw 22vh var(--stars), 65vw 42vh var(--stars), 73vw 28vh var(--stars),
     81vw 48vh var(--stars), 89vw 32vh var(--stars), 97vw 45vh var(--stars),
     3vw 68vh var(--stars), 11vw 75vh var(--stars), 19vw 82vh var(--stars),
     27vw 88vh var(--stars), 35vw 72vh var(--stars), 43vw 85vh var(--stars),

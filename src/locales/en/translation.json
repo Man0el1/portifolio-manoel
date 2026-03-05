@@ -10,7 +10,7 @@
     "about": "About",
     "work": "Projects",
     "contact": "Contact",
-    "status": "New courses have been completed!"
+    "status": "Portfolio and new projects!"
   },
 
   "about": {
@@ -28,12 +28,12 @@
 
   "work": {
     "github": "See more on my ",
-    "work_1": "VetSchedule",
-    "work_1sub": "An appointment scheduling system for medical care",
-    "work_2": "Aurora Atlântica Hotel (Work in progress)",
-    "work_2sub": "Booking website for a fictional hotel (Currently backend focused)",
-    "work_3": "Opacity Adjustment",
-    "work_3sub": "A simple Python project to make images transparent"
+    "work_1": "Aurora Atlântica Hotel (Work in progress)",
+    "work_1sub": "Booking website for a fictional hotel (Currently backend focused)",
+    "work_3": "VetSchedule",
+    "work_3sub": "An appointment scheduling system for medical care",
+    "work_4": "Opacity Adjustment",
+    "work_4sub": "A simple Python project to make images transparent"
   },
 
   "contact": {

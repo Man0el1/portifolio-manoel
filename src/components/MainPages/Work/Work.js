@@ -15,17 +15,20 @@ export default function Menu({ handleBackButton }) {
     {
       title: t('work.work_1'),
       description: t('work.work_1sub'),
-      img: '/images/VetSchedule.webp'
-    },
-    {
-      title: t('work.work_2'),
-      description: t('work.work_2sub'),
-      img: '/images/hotelapi.webp'
+      img: '/images/hotelapi.webp',
+      link: 'https://github.com/Man0el1/hotel-api'
     },
     {
       title: t('work.work_3'),
       description: t('work.work_3sub'),
-      img: '/images/transjar.webp'
+      img: '/images/VetSchedule.webp',
+      link: 'https://github.com/jpmaciel22/EqualitySchedule'
+    },
+    {
+      title: t('work.work_4'),
+      description: t('work.work_4sub'),
+      img: '/images/transjar.webp',
+      link: 'https://github.com/Man0el1/transparencia-imagem'
     }
   ];
 
@@ -37,6 +40,7 @@ export default function Menu({ handleBackButton }) {
         <div key={index} className="project">
           <h2 className="text project-title">{project.title}</h2>
           <p className="text project-explanation">{'• ' + project.description}</p>
+          <a className="github-link" href={project.link} target="_blank" rel="noopener noreferrer">Github</a>
 
           <Zoom zoomMargin={5}>
             <div className="photo-container">

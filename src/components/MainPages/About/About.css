@@ -69,3 +69,10 @@ hr {
 .education-subtitle {
   color: grey;
 }
+
+.link {
+  margin-top: 10px;
+  color: var(--normal-text);
+  font-weight: bold;
+  text-decoration: underline;
+}

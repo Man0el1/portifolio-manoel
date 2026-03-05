@@ -40,6 +40,7 @@ export default function About({ handleBackButton }) {
           </div>
           <h2 className='text'>Manoel Geremias</h2>
           <h5 className='text'>Web Developer</h5>
+          <a className='link' href="/PortfolioManoel.pdf" target="_blank">Portfólio</a>
         </div>
         <hr/>
 
