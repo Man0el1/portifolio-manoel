@@ -15,6 +15,12 @@ export default function Menu({ handleBackButton }) {
     {
       title: t('work.work_1'),
       description: t('work.work_1sub'),
+      img: '/images/librascam.webp',
+      link: 'https://librascam.vercel.app/'
+    },
+    {
+      title: t('work.work_2'),
+      description: t('work.work_2sub'),
       img: '/images/hotelapi.webp',
       link: 'https://github.com/Man0el1/hotel-api'
     },
@@ -40,7 +46,7 @@ export default function Menu({ handleBackButton }) {
         <div key={index} className="project">
           <h2 className="text project-title">{project.title}</h2>
           <p className="text project-explanation">{'• ' + project.description}</p>
-          <a className="github-link" href={project.link} target="_blank" rel="noopener noreferrer">Github</a>
+          <a className="github-link" href={project.link} target="_blank" rel="noopener noreferrer">Clique pra ver o Projeto</a>
 
           <Zoom zoomMargin={5}>
             <div className="photo-container">

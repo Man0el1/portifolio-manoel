@@ -10,7 +10,7 @@
     "about": "About",
     "work": "Projects",
     "contact": "Contact",
-    "status": "Portfolio and new projects!"
+    "status": "Added new project: LibrasCam"
   },
 
   "about": {
@@ -28,8 +28,10 @@
 
   "work": {
     "github": "See more on my ",
-    "work_1": "Aurora Atlântica Hotel (Work in progress)",
-    "work_1sub": "Booking website for a fictional hotel (Currently backend focused)",
+    "work_1": "LibrasCam",
+    "work_1sub": "Website that translates the Brazilian Sign Language alphabet, made with Machine Learning",
+    "work_2": "Aurora Atlântica Hotel (Work in progress)",
+    "work_2sub": "Booking website for a fictional hotel (Currently backend focused)",
     "work_3": "VetSchedule",
     "work_3sub": "An appointment scheduling system for medical care",
     "work_4": "Opacity Adjustment",

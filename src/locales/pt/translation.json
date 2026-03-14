@@ -10,7 +10,7 @@
     "about": "Sobre",
     "work": "Trabalhos",
     "contact": "Contato",
-    "status": "Portfolio e novos projetos!"
+    "status": "Adicionado novo projeto: LibrasCam"
   },
 
   "about": {
@@ -28,8 +28,10 @@
 
   "work": {
     "github": "Veja mais no meu ",
-    "work_1": "Hotel Aurora Atlântica (Em progresso)",
-    "work_1sub": "Site de booking para um hotel simulado (Atualmente focado em backend)",
+    "work_1": "LibrasCam",
+    "work_1sub": "Site tradutor de alfabeto Libras, feito com Machine Learning",
+    "work_2": "Hotel Aurora Atlântica (Em progresso)",
+    "work_2sub": "Site de booking para um hotel simulado (Atualmente focado em backend)",
     "work_3": "VetSchedule",
     "work_3sub": "Um sistema de agendamento de consultas para atendimento médico",
     "work_4": "Ajuste de Opacidade",
