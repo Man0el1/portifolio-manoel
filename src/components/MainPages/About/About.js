@@ -11,7 +11,7 @@ export default function About({ handleBackButton }) {
   const languages = ['Javascript','HTML/CSS','Python','Java','C'];
   const frameworks = ['React', 'Express'];
   const bancoDeDados = ['MongoDB', 'PostgreSQL', 'MySQL'];
-  const ferramentas = ['Git', 'Github', 'Trello', 'Figma'];
+  const ferramentas = ['Docker', 'Git', 'Github', 'Trello', 'Figma'];
 
   const sections = [languages, frameworks, bancoDeDados, ferramentas];
   const sectionsStrings = [t("about.programming_languages"), "Frameworks", t("about.database"), t("about.tools")];

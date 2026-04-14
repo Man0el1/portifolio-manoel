@@ -34,8 +34,8 @@ export default function Menu({ handleMenuClick }) {
       </div>
 
       <div className='status'>
-        <h3 className='text status-date'>Status (14/03):</h3>
-        <p className='text'>{t('menu.status')}</p>
+        <h3 className='text status-date'>Status (14/04):</h3>
+        <p className='text'>Docker</p>
       </div>
     </div>
   )
